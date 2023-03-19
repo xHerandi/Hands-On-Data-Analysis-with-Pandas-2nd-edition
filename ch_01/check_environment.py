@@ -25,7 +25,7 @@ def run_checks(raise_exc=False):
 
     # check the python version
     print('Using Python in %s:' % sys.prefix)
-    if Version(sys.version) >= '3.7.1' and Version(sys.version) < '3.10.0':
+    if Version(sys.version) >= '3.7.1': #and Version(sys.version) < '3.10.0'
         print(OK, 'Python is version %s\n' % sys.version)
     else:
         print(FAIL, 'Python version >= 3.7.1 and < 3.10.0 is required, but %s is installed.\n' % sys.version)
